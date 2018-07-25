@@ -1,6 +1,7 @@
 ﻿This is Project 1 Mobile app which is developed under SIT313 of Deakin University, Melbourne, Australia.
+Target Audience: Primary School Students
 Main features:
-- Addition
-- Substraction
-- Division
-- Multiplication
+- Addition: Addition between two random integer numbers from 0 to 99.
+- Substraction: Substraction between two random integer numbers from 0 to 99.
+- Division: Division between two integer numbers which belong to time-tables
+- Multiplication: Mutiplication between two integer numbers which belong to time-tables

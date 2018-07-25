@@ -4,25 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_grey_300">
-    <RelativeLayout
-        android:id="@+id/topbarHome"
+    <ScrollView
+        android:id="@+id/scrollHome"
+        android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_dark">
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="10sp"
-            android:layout_marginStart="10sp"
-            android:gravity="center" />
-    </RelativeLayout>
-    <Button
-        android:id="@+id/myButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="@string/add"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/btnSub"
+                android:text="@string/subs"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/btnMulti"
+                android:text="@string/multi"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/btnDiv"
+                android:text="@string/div"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/btnAbt"
+                android:text="@string/about"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
