@@ -20,7 +20,8 @@
             android:layout_alignParentStart="true"
             android:textSize="15sp"
             android:textAllCaps="true"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/material_grey_300" />
         <Button
             android:id="@+id/btnNext"
             android:text="Next"
@@ -30,47 +31,81 @@
             android:layout_alignParentEnd="true"
             android:textSize="15sp"
             android:textAllCaps="true"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/material_grey_300" />
     </RelativeLayout>
     <ScrollView
         android:id="@+id/scrollAddition"
         android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:layout_marginTop="25sp">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/txtQuestionAddition"
-                android:text="@string/app_name"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                android:textColor="@android:color/holo_red_light"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10sp" />
-            <EditText
-                android:id="@+id/txtAnswerAddition"
-                android:inputType="number"
-                android:layout_width="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/txtQuestionAddition"
+                    android:text="@string/app_name"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:textColor="@android:color/holo_purple" />
-            <Button
-                android:id="@+id/btnDone"
-                android:text="@string/done"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="10sp"
-                android:layout_width="150sp"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/txtAnswerAddition"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/holo_purple"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textAllCaps="true" />
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/txtJudgement"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/btnDone"
+                    android:text="@string/done"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
