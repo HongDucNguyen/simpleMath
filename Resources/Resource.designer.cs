@@ -2014,8 +2014,8 @@ namespace simpleMath
 			// aapt resource value: 0x7f0b007a
 			public const int media_actions = 2131427450;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int message = 2131427464;
+			// aapt resource value: 0x7f0b008b
+			public const int message = 2131427467;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int middle = 2131427363;
@@ -2073,6 +2073,9 @@ namespace simpleMath
 			
 			// aapt resource value: 0x7f0b0042
 			public const int scrollIndicatorUp = 2131427394;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int scrollSubtraction = 2131427464;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int scrollView = 2131427395;
@@ -2186,16 +2189,22 @@ namespace simpleMath
 			public const int topbarAddition = 2131427430;
 			
 			// aapt resource value: 0x7f0b0087
-			public const int topbarHome = 2131427463;
+			public const int topbarSubtraction = 2131427463;
 			
 			// aapt resource value: 0x7f0b006b
 			public const int txtAnswerAddition = 2131427435;
+			
+			// aapt resource value: 0x7f0b008a
+			public const int txtAnswerSubtraction = 2131427466;
 			
 			// aapt resource value: 0x7f0b006c
 			public const int txtJudgement = 2131427436;
 			
 			// aapt resource value: 0x7f0b006a
 			public const int txtQuestionAddition = 2131427434;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int txtQuestionSubtraction = 2131427465;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int uniform = 2131427359;
@@ -2392,7 +2401,7 @@ namespace simpleMath
 			public const int select_dialog_singlechoice_material = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int Substraction = 2130968622;
+			public const int Subtraction = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
 			public const int support_simple_spinner_dropdown_item = 2130968623;

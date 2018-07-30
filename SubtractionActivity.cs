@@ -13,47 +13,64 @@ using Android.Widget;
 
 namespace simpleMath
 {
-    [Activity(Label = "AdditionActivity", Theme = "@style/AppTheme.NoActionBar")]
-
-    public class AdditionActivity : Activity
+    [Activity(Label = "SubtractionActivity")]
+    public class SubtractionActivity : Activity
     {
-        private Button btnHome, btnNext, btnDone;
-        private TextView txtQuestion, txtJudgement;
-        private EditText txtAnswer;
-        private int x, y;
+        Button btnHome, btnNext, btnDone;
+        TextView txtQuestion, txtJudgement;
+        EditText txtAnswer;
+        int x, y;
         private bool btnNextEnable = false, btnDoneEnable = true;// boolean to enable button next and button done
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Addition);
+            // Set our view from the "Subtraction" layout resource
+            SetContentView(Resource.Layout.Subtraction);
             // Assign variables to the layout resources
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
             btnNext = FindViewById<Button>(Resource.Id.btnNext);
             btnDone = FindViewById<Button>(Resource.Id.btnDone);
 
-            txtQuestion = FindViewById<TextView>(Resource.Id.txtQuestionAddition);
+            txtQuestion = FindViewById<TextView>(Resource.Id.txtQuestionSubtraction);
             txtJudgement = FindViewById<TextView>(Resource.Id.txtJudgement);
-            txtAnswer = FindViewById<EditText>(Resource.Id.txtAnswerAddition);
+            txtAnswer = FindViewById<EditText>(Resource.Id.txtAnswerSubtraction);
             //If app state changes, retrieve saved information
             //If app state doesn't change, start new screen with new value.
-            if(savedInstanceState != null){
+            if (savedInstanceState != null)
+            {
                 x = savedInstanceState.GetInt("x value", 0);
                 y = savedInstanceState.GetInt("y value", 0);
                 txtAnswer.Text = savedInstanceState.GetString("answer", "");
                 txtJudgement.Text = savedInstanceState.GetString("judgement", "");
-                if(txtJudgement.Text == "Please answer!"){
+
+                if (txtJudgement.Text == "Please answer!")
+                {
                     txtJudgement.SetTextColor(Android.Graphics.Color.Black);
-                }else if(txtJudgement.Text == "Correct!!!"){
+                }
+                else if (txtJudgement.Text == "Correct!!!")
+                {
                     txtJudgement.SetTextColor(Android.Graphics.Color.DarkGreen);
-                }else if(txtJudgement.Text == "Incorrect!!!"){
+                }
+                else if (txtJudgement.Text == "Incorrect!!!")
+                {
                     txtJudgement.SetTextColor(Android.Graphics.Color.Red);
                 }
-                txtQuestion.Text = x.ToString() + " + " + y.ToString() + " = ?";
+
+                if (x > y)
+                {
+                    txtQuestion.Text = x.ToString() + " - " + y.ToString() + " = ?";
+                }
+                else
+                {
+                    txtQuestion.Text = y.ToString() + " - " + x.ToString() + " = ?";
+                }
+
                 btnNextEnable = savedInstanceState.GetBoolean("nextEnable", false);
                 btnDoneEnable = savedInstanceState.GetBoolean("doneEnable", true);
                 CheckEnable();
-            }else{
+            }
+            else
+            {
                 GetQuestion();
                 CheckEnable();
             }
@@ -63,13 +80,18 @@ namespace simpleMath
             //If answer is correct, correct text will appear
             //If answer is incorrect, incorrect text will appear
             btnDone.Click += delegate {
-                if (txtAnswer.Text == "") {
+                if (txtAnswer.Text == "")
+                {
                     txtJudgement.Text = "Please answer!";
                     txtJudgement.SetTextColor(Android.Graphics.Color.Black);
                 }
-                else{
-                    int tmp = Int32.Parse(txtAnswer.Text);
-                    if (tmp == x + y)
+                else
+                {
+                    int result = Int32.Parse(txtAnswer.Text);
+                    int tmp;
+                    if (x > y) { tmp = x - y; }
+                    else { tmp = y - x; }
+                    if (result == tmp)
                     {
                         txtJudgement.Text = "Correct!!!";
                         txtJudgement.SetTextColor(Android.Graphics.Color.DarkGreen);
@@ -102,11 +124,19 @@ namespace simpleMath
             };
         }
         //Function generate question which will be displayed on screen
-        private void GetQuestion(){
+        //Because the result isn't allowed to be negative,
+        //we have to compare variable to make suitable question.
+        private void GetQuestion()
+        {
             Random randomNumber = new Random();
             x = randomNumber.Next(0, 99);
             y = randomNumber.Next(0, 99);
-            txtQuestion.Text = x.ToString() + " + " + y.ToString() + " = ?";
+            if(x>y){
+                txtQuestion.Text = x.ToString() + " - " + y.ToString() + " = ?";    
+            }else{
+                txtQuestion.Text = y.ToString() + " - " + x.ToString() + " = ?";    
+            }
+
         }
         //Save data when app state changes 
         protected override void OnSaveInstanceState(Bundle savedState)
@@ -122,10 +152,14 @@ namespace simpleMath
         //Function to check button Next and Done is enable or not
         //If enable, button will be visible
         //If not, button will be invisible
-        private void CheckEnable(){
-            if(btnNextEnable){
+        private void CheckEnable()
+        {
+            if (btnNextEnable)
+            {
                 btnNext.Visibility = ViewStates.Visible;
-            }else{
+            }
+            else
+            {
                 btnNext.Visibility = ViewStates.Invisible;
             }
             if (btnDoneEnable)

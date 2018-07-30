@@ -9,7 +9,7 @@ namespace simpleMath
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
-        Button btnAddition, btnSubstraction, btnMultiplication, btnDivision,btnAbout;
+        Button btnAddition, btnSubtraction, btnMultiplication, btnDivision,btnAbout;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -20,13 +20,13 @@ namespace simpleMath
 
             // Get the buttons from the layout resource,
             btnAddition = FindViewById<Button>(Resource.Id.btnAdd);
-            btnSubstraction = FindViewById<Button>(Resource.Id.btnSub);
+            btnSubtraction = FindViewById<Button>(Resource.Id.btnSub);
             btnMultiplication = FindViewById<Button>(Resource.Id.btnMulti);
             btnDivision = FindViewById<Button>(Resource.Id.btnDiv);
             btnAbout = FindViewById<Button>(Resource.Id.btnAbt);
             //Assign event to the buttons
             btnAddition.Click += OnButtonClicked;
-            btnSubstraction.Click += OnButtonClicked;
+            btnSubtraction.Click += OnButtonClicked;
             btnMultiplication.Click += OnButtonClicked;
             btnDivision.Click += OnButtonClicked;
             btnAbout.Click += OnButtonClicked;
@@ -39,6 +39,12 @@ namespace simpleMath
             //If the button Addition is clicked, Addition activity will be opened
             if(button == btnAddition){
                 var newActivity = new Intent(this, typeof(AdditionActivity));
+                StartActivity(newActivity);
+            }
+            //If the button Subtraction is clicked, Subtraction activity will be opened
+            if (button == btnSubtraction)
+            {
+                var newActivity = new Intent(this, typeof(SubtractionActivity));
                 StartActivity(newActivity);
             }
 

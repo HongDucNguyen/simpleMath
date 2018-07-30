@@ -3,7 +3,7 @@
     <string name="hello">Hello World, Click Me!</string>
     <string name="app_name">Simple Math</string>
     <string name="add">ADDITION</string>
-    <string name="subs">SUBSTRACTION</string>
+    <string name="subs">SUBTRACTION</string>
     <string name="multi">MULTIPLICATION</string>
     <string name="div">DIVISION</string>
     <string name="about">ABOUT</string>
