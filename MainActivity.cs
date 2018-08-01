@@ -47,6 +47,12 @@ namespace simpleMath
                 var newActivity = new Intent(this, typeof(SubtractionActivity));
                 StartActivity(newActivity);
             }
+            //If the button Multiplication is clicked, Multiplication activity will be opened
+            if (button == btnMultiplication)
+            {
+                var newActivity = new Intent(this, typeof(MultiplicationActivity));
+                StartActivity(newActivity);
+            }
 
         }
 

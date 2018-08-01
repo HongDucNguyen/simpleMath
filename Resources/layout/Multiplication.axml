@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/material_grey_300">
     <RelativeLayout
-        android:id="@+id/topbarSubtraction"
+        android:id="@+id/topbarMultiplication"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_orange_dark"
@@ -35,7 +35,7 @@
             android:backgroundTint="@color/material_grey_300" />
     </RelativeLayout>
     <ScrollView
-        android:id="@+id/scrollSubtraction"
+        android:id="@+id/scrollMultiplication"
         android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <TextView
-                    android:id="@+id/txtQuestionSubtraction"
+                    android:id="@+id/txtQuestionMultiplication"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/holo_blue_dark"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <EditText
-                    android:id="@+id/txtAnswerSubtraction"
+                    android:id="@+id/txtAnswerMultiplication"
                     android:inputType="number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

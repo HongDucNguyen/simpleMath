@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace simpleMath
 {
-    [Activity(Label = "SubtractionActivity")]
+    [Activity(Label = "SubtractionActivity", Theme = "@style/AppTheme.NoActionBar")]
     public class SubtractionActivity : Activity
     {
         Button btnHome, btnNext, btnDone;
