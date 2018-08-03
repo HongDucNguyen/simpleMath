@@ -86,6 +86,7 @@
     <Compile Include="AdditionActivity.cs" />
     <Compile Include="SubtractionActivity.cs" />
     <Compile Include="MultiplicationActivity.cs" />
+    <Compile Include="DivisionActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -107,6 +108,7 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\layout\Subtraction.axml" />
     <AndroidResource Include="Resources\layout\Multiplication.axml" />
+    <AndroidResource Include="Resources\layout\Division.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

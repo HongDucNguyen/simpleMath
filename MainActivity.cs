@@ -53,7 +53,12 @@ namespace simpleMath
                 var newActivity = new Intent(this, typeof(MultiplicationActivity));
                 StartActivity(newActivity);
             }
-
+            //If the button Division is clicked, Multiplication activity will be opened
+            if (button == btnDivision)
+            {
+                var newActivity = new Intent(this, typeof(DivisionActivity));
+                StartActivity(newActivity);
+            }
         }
 
     }
