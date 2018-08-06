@@ -26,15 +26,15 @@ namespace simpleMath
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "Addition" layout resource
-            SetContentView(Resource.Layout.Addition);
+            SetContentView(Resource.Layout.CalculationLayout);
             // Assign variables to the layout resources
             btnHome = FindViewById<Button>(Resource.Id.btnHome);
             btnNext = FindViewById<Button>(Resource.Id.btnNext);
             btnDone = FindViewById<Button>(Resource.Id.btnDone);
 
-            txtQuestion = FindViewById<TextView>(Resource.Id.txtQuestionAddition);
+            txtQuestion = FindViewById<TextView>(Resource.Id.txtQuestion);
             txtJudgement = FindViewById<TextView>(Resource.Id.txtJudgement);
-            txtAnswer = FindViewById<EditText>(Resource.Id.txtAnswerAddition);
+            txtAnswer = FindViewById<EditText>(Resource.Id.txtAnswer);
             //If app state changes, retrieve saved information
             //If app state doesn't change, start new screen with new value.
             if(savedInstanceState != null){

@@ -104,11 +104,9 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\layout\Addition.axml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
-    <AndroidResource Include="Resources\layout\Subtraction.axml" />
-    <AndroidResource Include="Resources\layout\Multiplication.axml" />
-    <AndroidResource Include="Resources\layout\Division.axml" />
+    <AndroidResource Include="Resources\layout\CalculationLayout.axml" />
+    <AndroidResource Include="Resources\layout-normal-land\Main.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
