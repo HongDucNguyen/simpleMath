@@ -24,7 +24,7 @@ namespace simpleMath
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            // Set our view from the "Division" layout resource
+            // Set our view from the "Calculation" layout resource
             SetContentView(Resource.Layout.CalculationLayout);
             // Assign variables to the layout resources
             btnHome = FindViewById<Button>(Resource.Id.btnHome);

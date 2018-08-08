@@ -59,6 +59,11 @@ namespace simpleMath
                 var newActivity = new Intent(this, typeof(DivisionActivity));
                 StartActivity(newActivity);
             }
+            if (button == btnAbout)
+            {
+                var newActivity = new Intent(this, typeof(AboutActivity));
+                StartActivity(newActivity);
+            }
         }
 
     }

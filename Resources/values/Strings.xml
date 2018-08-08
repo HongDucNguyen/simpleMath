@@ -10,4 +10,5 @@
     <string name="home">home</string>
     <string name="next">next</string>
     <string name="done">done</string>
+    <string name="about_read">\t This app is built under SIT313 - Developing Client - Server Web Application.\n\t It is created with purpose to help Primary School Student practicing Mathematics in four calculations: Addition, Subtraction, Multiplication and Division.\n\t Developed by Duc Nguyen - SID: 216197049</string>
 </resources>

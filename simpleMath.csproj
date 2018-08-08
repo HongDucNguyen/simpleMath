@@ -87,6 +87,7 @@
     <Compile Include="SubtractionActivity.cs" />
     <Compile Include="MultiplicationActivity.cs" />
     <Compile Include="DivisionActivity.cs" />
+    <Compile Include="AboutActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -107,6 +108,18 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\layout\CalculationLayout.axml" />
     <AndroidResource Include="Resources\layout-normal-land\Main.axml" />
+    <AndroidResource Include="Resources\layout-large-land\Main.axml" />
+    <AndroidResource Include="Resources\layout-normal-port\Main.axml" />
+    <AndroidResource Include="Resources\layout-large-port\Main.axml" />
+    <AndroidResource Include="Resources\layout-normal-port\CalculationLayout.axml" />
+    <AndroidResource Include="Resources\layout-large-port\CalculationLayout.axml" />
+    <AndroidResource Include="Resources\layout-normal-land\CalculationLayout.axml" />
+    <AndroidResource Include="Resources\layout-large-land\CalculationLayout.axml" />
+    <AndroidResource Include="Resources\layout\AboutLayout.axml" />
+    <AndroidResource Include="Resources\layout-normal-port\AboutLayout.axml" />
+    <AndroidResource Include="Resources\layout-large-port\AboutLayout.axml" />
+    <AndroidResource Include="Resources\layout-normal-land\AboutLayout.axml" />
+    <AndroidResource Include="Resources\layout-large-land\AboutLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
