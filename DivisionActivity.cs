@@ -19,6 +19,7 @@ namespace simpleMath
         private Button btnHome, btnNext, btnDone;
         private TextView txtQuestion, txtJudgement;
         private EditText txtAnswer;
+        private ImageView judgeImg;
         private int x, y, z;
         private bool btnNextEnable = false, btnDoneEnable = true;// boolean to enable button next and button done
         protected override void OnCreate(Bundle savedInstanceState)
@@ -34,6 +35,8 @@ namespace simpleMath
             txtQuestion = FindViewById<TextView>(Resource.Id.txtQuestion);
             txtJudgement = FindViewById<TextView>(Resource.Id.txtJudgement);
             txtAnswer = FindViewById<EditText>(Resource.Id.txtAnswer);
+
+            judgeImg = FindViewById<ImageView>(Resource.Id.judgementImage);
             //If app state changes, retrieve saved information
             //If app state doesn't change, start new screen with new value.
             if (savedInstanceState != null)
@@ -45,14 +48,17 @@ namespace simpleMath
                 if (txtJudgement.Text == "Please answer!")
                 {
                     txtJudgement.SetTextColor(Android.Graphics.Color.Black);
+                    judgeImg.SetImageResource(0);
                 }
                 else if (txtJudgement.Text == "Correct!!!")
                 {
                     txtJudgement.SetTextColor(Android.Graphics.Color.DarkGreen);
+                    judgeImg.SetImageResource(Resource.Drawable.correct);
                 }
                 else if (txtJudgement.Text == "Incorrect!!!")
                 {
                     txtJudgement.SetTextColor(Android.Graphics.Color.Red);
+                    judgeImg.SetImageResource(Resource.Drawable.incorrect);
                 }
                 txtQuestion.Text = x.ToString() + " / " + y.ToString() + " = ?";
                 btnNextEnable = savedInstanceState.GetBoolean("nextEnable", false);
@@ -74,6 +80,7 @@ namespace simpleMath
                 {
                     txtJudgement.Text = "Please answer!";
                     txtJudgement.SetTextColor(Android.Graphics.Color.Black);
+                    judgeImg.SetImageResource(0);
                 }
                 else
                 {
@@ -82,11 +89,13 @@ namespace simpleMath
                     {
                         txtJudgement.Text = "Correct!!!";
                         txtJudgement.SetTextColor(Android.Graphics.Color.DarkGreen);
+                        judgeImg.SetImageResource(Resource.Drawable.correct);
                     }
                     else
                     {
                         txtJudgement.Text = "Incorrect!!!";
                         txtJudgement.SetTextColor(Android.Graphics.Color.Red);
+                        judgeImg.SetImageResource(Resource.Drawable.incorrect);
                     }
                     btnDoneEnable = false;
                     btnNextEnable = true;
@@ -99,6 +108,7 @@ namespace simpleMath
                 GetQuestion();
                 txtJudgement.Text = "";
                 txtAnswer.Text = "";
+                judgeImg.SetImageResource(0);
                 btnDoneEnable = true;
                 btnNextEnable = false;
                 CheckEnable();
@@ -113,6 +123,7 @@ namespace simpleMath
         //Function generate question which will be displayed on screen
         private void GetQuestion()
         {
+            judgeImg.SetImageResource(0);
             Random randomNumber = new Random();
             y = randomNumber.Next(1, 12);
             z = randomNumber.Next(1, 12);

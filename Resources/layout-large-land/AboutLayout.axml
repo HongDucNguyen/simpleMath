@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:layout_marginTop="15sp">
+        android:layout_marginTop="15dp">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:singleLine="false"
                 android:text="@string/about_read"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_gravity="fill_horizontal" />
         </LinearLayout>
     </ScrollView>

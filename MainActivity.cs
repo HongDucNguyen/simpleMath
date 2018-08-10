@@ -6,7 +6,7 @@ using Android.Content;
 
 namespace simpleMath
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
     public class MainActivity : Activity
     {
         Button btnAddition, btnSubtraction, btnMultiplication, btnDivision,btnAbout;

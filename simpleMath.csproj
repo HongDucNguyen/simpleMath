@@ -96,6 +96,18 @@
     <None Include="packages.config" />
     <None Include="readme.md" />
     <None Include="Licenses.txt" />
+    <None Include="Resources\drawable\drawable-hdpi\correct.png" />
+    <None Include="Resources\drawable\drawable-hdpi\incorrect.png" />
+    <None Include="Resources\drawable\drawable-ldpi\correct.png" />
+    <None Include="Resources\drawable\drawable-ldpi\incorrect.png" />
+    <None Include="Resources\drawable\drawable-mdpi\correct.png" />
+    <None Include="Resources\drawable\drawable-mdpi\incorrect.png" />
+    <None Include="Resources\drawable\drawable-xhdpi\correct.png" />
+    <None Include="Resources\drawable\drawable-xhdpi\incorrect.png" />
+    <None Include="Resources\drawable\drawable-xxhdpi\correct.png" />
+    <None Include="Resources\drawable\drawable-xxhdpi\incorrect.png" />
+    <None Include="Resources\drawable\drawable-xxxhdpi\correct.png" />
+    <None Include="Resources\drawable\drawable-xxxhdpi\incorrect.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -120,6 +132,13 @@
     <AndroidResource Include="Resources\layout-large-port\AboutLayout.axml" />
     <AndroidResource Include="Resources\layout-normal-land\AboutLayout.axml" />
     <AndroidResource Include="Resources\layout-large-land\AboutLayout.axml" />
+    <AndroidResource Include="Resources\drawable\correct.png" />
+    <AndroidResource Include="Resources\drawable\incorrect.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

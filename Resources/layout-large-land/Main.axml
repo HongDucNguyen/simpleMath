@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:layout_marginTop="25sp">
+        android:layout_marginTop="25dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
                 <Button
                     android:id="@+id/btnAdd"
                     android:text="@string/add"
-                    android:layout_width="150sp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15sp"
@@ -38,7 +38,7 @@
                 <Button
                     android:id="@+id/btnSub"
                     android:text="@string/subs"
-                    android:layout_width="150sp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15sp"
@@ -53,7 +53,7 @@
                 <Button
                     android:id="@+id/btnMulti"
                     android:text="@string/multi"
-                    android:layout_width="150sp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15sp"
@@ -68,7 +68,7 @@
                 <Button
                     android:id="@+id/btnDiv"
                     android:text="@string/div"
-                    android:layout_width="150sp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15sp"
@@ -83,7 +83,7 @@
                 <Button
                     android:id="@+id/btnAbt"
                     android:text="@string/about"
-                    android:layout_width="150sp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textSize="15sp"

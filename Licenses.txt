@@ -1,1 +1,4 @@
-﻿Any material license will go in this file
+﻿Any material license will go in this file:
+1. correct.png, created by OpenClipart-Vectors, retrieved on 10 AUG 2018, https://pixabay.com/en/affirmative-confirm-checked-check-156538/, CC0 Creative Commons Licence.
+2. incorrect.png, created by OpenClipart-Vectors, retrieved on 10 AUG 2018, https://pixabay.com/en/abort-cancel-button-incorrect-156539/, CC0 Creative Commons Licence.
+3. math.png, created by janif93, retrieved on 10 AUG 2018, https://pixabay.com/en/time-split-by-divide-2020934/, CC0 Creative Commons Licence.
